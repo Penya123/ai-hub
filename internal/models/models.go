@@ -5,6 +5,7 @@ type OllamaRequest struct {
 	Model  string `json:"model"`
 	Prompt string `json:"prompt"`
 	Stream bool   `json:"stream"`
+	Options map[string]interface{} `json:"options,omitempty"`
 }
 
 // OllamaResponse captura la respuesta generada por Aigis
